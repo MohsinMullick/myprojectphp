@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="Project_CSS_File/C_V_R.css">   
+</head>
+<!-- Box Icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+
+
+
+<!------------navbar name---------->
+<body>
+  <header>
+    <a href="#" class="logo"><img src="images/new.jpg" alt="Car Rental Logo"></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+       <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+         <li><a href="#ride">Ride</a></li>
+          <li><a href="#services">Services</a></li>
+           <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+             <li><a href="#contact">Contact</a></li>
+              </ul>
+               <div class="header-btn">
+                <div class="dropdown">
+                 <a href="#" class="sign-up">Sign Up</a>
+                   <ul class="dropdown-menu">
+                    <li><a href="Admin.html",="admin-signup.html">Admin</a></li>
+                  <li><a href="Customer.html",="customer-signup.html">Customer</a></li>
+                <li><a href="Worker.html",="worker-signup.html">Worker</a></li>
+              </ul>
+            </div>
+            </div>
+            <div class="header-btn">
+              <div class="dropdown">
+         <a href="#" class="sign-in">Sign In</a>
+         <ul class="dropdown-menu">
+          <li><a href="All_Php_Files/Customer_Login.php",="customer-login.html">Customer</a></li>
+          <li><a href="All_Php_Files/Worker_Login.php",="All_Php_Files/Worker_Dashboard.php">Worker</a></li>
+        
+        </ul>
+      </div>
+         
+      </div>
+    </header>
+  <style>
+                /* Dropdown container styling */
+
+
+
+.dropdown 
+        {
+         position: relative;
+          display: inline-block;
+           }
+
+
+        /* Dropdown menu hidden by default */
+      .dropdown-menu {
+       display: none;
+        position: absolute;
+         background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           z-index: 1000;
+            list-style: none;
+             padding: 10px;
+              margin: 0;
+               border-radius: 5px;
+                }
+
+    /* Dropdown menu items */
+    .dropdown-menu li
+                    {
+                     margin: 0;
+                      }
+
+                      .dropdown-menu li a {
+                       text-decoration: none;
+                        display: block;
+                         padding: 8px 12px;
+                          color: #333;
+                          transition: background-color 0.3s ease;
+                           }
+
+                          .dropdown-menu li a:hover {
+                            background-color: #eabbbb;
+                             }
+
+    /* Show dropdown menu on hover */
+    .dropdown:hover .dropdown-menu 
+                                  {
+                                    display: block;
+                                     }
+
+    /* Sign Up button styling */
+    .header-btn .sign-up
+  {
+    background: #474fa0;
+     color: #FFF;
+      border-radius: 0.5rem;
+       }
+
+    .sign-up:hover
+                 {
+                   background-color: var(--main-color);;
+                    }
+                     </style>
+                       </body>
+
+
+
+
+    <!--------Home Section---------->
+<section class="home" id="home">
+  <div class="text">
+    <h1><span>Looking To</span><br>Rent A Car</h1>  
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque<br> excepturi non vitae, fuga sunt ipsum odit ipsa maiores cupiditate<br>eligendi magni quam placeat aperiam necessitatibus consequuntur <br>consectetur velit blanditiis distinctio!
+        </p>           
+          </div>
+
+
+
+        <!--------create box mapping-->
+<div class="form-container">
+  <form action="">
+    <div class="input-box">
+      <span>location></span>
+        <input type="search"name=""id=""placeholder="search place">
+          </div>
+            <div class="input -box">
+              <span>Pick-Up Date</span>
+               <input type="date"name=""id="">
+             </div>
+           <div class="input -box">
+         <span>Return Date</span>
+       <input type="date"name=""id="">
+     </div>
+   <input type="submit"name=""id=""class="btn">
+ </div>
+</section>
+
+
+
+          <!----------processing work----------->
+<section class="ride"id="ride">
+  <div class="heading">
+    <span>How its work</span>
+      <h1>Rent with 3 easy step</h1>
+        </div>
+         <div class="ride-container">
+          <div class="box">
+           <i class="bx bxs-map"></i>
+            <h2>A location</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti quo cupiditate, ipsam labore recusandae doloribus error nostrum sed nesciunt necessitatibus maxime possimus quisquam praesentium hic voluptas sequi tenetur quibusdam.</p>
+               </div>
+                <div class="box">
+                 <i class="bx bxs-calendar-check"></i>
+                   <h2>Pick Up date</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti quo cupiditate, ipsam labore recusandae doloribus error nostrum sed nesciunt necessitatibus maxime possimus quisquam praesentium hic voluptas sequi tenetur quibusdam.</p>
+               </div>
+             <div class="box">
+           <box icon type='solid' name="bxs-calendar-star"></box icon>
+         <h2>A Car</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti quo cupiditate, ipsam labore recusandae doloribus error nostrum sed nesciunt necessitatibus maxime possimus quisquam praesentium hic voluptas sequi tenetur quibusdam.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+             <!-------------services------------------>
+<section class="services"id="services">
+  <div class="heading">
+    <span>Best Services</span>
+      <h1>Explore Out Top Deals<br>From Top Rated Dealers</h1>
+        </div>
+          <div class="services-container">
+
+
+
+
+          <!----------first image-------------->
+<div class="box">
+  <div class="box-img">
+     <img src="images/A1CAR.jpg" alt="">
+       </div> 
+         <p>2016</p>
+           <h3>2016 Honda Civic</h3>
+            <h2>$60600|$400<span>/month</span></h2>
+             <a href="#"class="btn">Rent Now</a>
+              </div>
+
+        <!----------second image-------------->
+<div class="box">
+  <div class="box-img">
+    <img src="images/A2CAR Acura Nsx2022.jpg"alt="">
+      </div>
+        <p>2016</p>
+         <h3>2016 Honda Civic</h3>
+           <h2>$60600|$400<span>/month</span></h2>
+            <a href="#"class="btn">Rent Now</a>
+             </div>
+
+       <!---------------third image------------->
+<div class="box">
+  <div class="box-img">
+    <img src="images/rsz_a3car.jpg"alt="">
+      </div>
+        <p>2016</p>
+         <h3>2016 Honda Civic</h3>
+           <h2>$60600|$400<span>/month</span></h2>
+             <a href="#"class="btn">Rent Now</a>
+              </div>
+
+    <!----------------third image------------------>
+<div class="box">
+  <div class="box-img">
+    <img src="images/car10.jpg"alt="">
+      </div>
+        <p>2016</p>
+          <h3>2016 Honda Civic</h3>
+            <h2>$60600|$400<span>/month</span></h2>
+             <a href="#"class="btn">Rent Now</a>
+               </div>
+
+        <!----------------fourth image---------------->
+<div class="box">
+  <div class="box-img">
+    <img src="images/car6.jpg"alt="">
+      </div>
+        <p>2016</p>
+          <h3>2016 Honda Civic</h3>
+            <h2>$60600|$400<span>/month</span></h2>
+              <a href="#"class="btn">Rent Now</a>
+                </div>
+
+           <!--------------fifth image--------------->
+<div class="box">
+  <div class="box-img">
+    <img src="images/car7.jpg"alt="">
+      </div>
+        <p>2016</p>
+          <h3>2016 Honda Civic</h3>
+           <h2>$60600|$400<span>/month</span></h2>
+             <a href="#"class="btn">Rent Now</a>
+              </div>
+
+           <!----------------car8 image-------------->
+<div class="box">
+  <div class="box-img">
+    <img src="images/car8.jpg"alt="">
+      </div>
+        <p>2016</p>
+          <h3>2016 Honda Civic</h3>
+            <h2>$60600|$400<span>/month</span></h2>
+              <a href="#"class="btn">Rent Now</a>
+                </div>
+
+           <!--------------------six image------------>
+<div class="box">
+  <div class="box-img">
+    <img src="images/car9.jpg"alt="">
+      </div>
+        <p>2016</p>
+          <h3>2016 Honda Civic</h3>
+            <h2>$60600|$400<span>/month</span></h2>
+             <a href="#"class="btn">Rent Now</a>
+              </div>
+               </div>
+                 </section>
+
+
+
+           <!----------------about----------------->
+<section class="about"id="about">
+    <div class="heading">
+      <span>About Us</span>
+        <h1>Best Customer Experience</h1>
+         </div>
+           <div class="aout-container">
+             <div class="about-img">
+               <img src="images/EX.jpg" alt="">
+                </div>
+                 <div class="about-text">
+                   <span>About Us</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis labore sint numquam tenetur beatae molestiae laboriosam hic provident cumque? Praesentium aperiam iure cupiditate minus suscipit quam nemo dolor. Eveniet!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae deleniti laborum accusantium voluptatibus, pariatur excepturi dicta nostrum optio nam molestias sed assumenda quam maxime quos, unde sequi vitae perferendis!</p>
+            <a href="#"class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+
+             <!-----------------reviews image-1--------------->
+<section class="reviews"id="reviews">
+   <div class="heading"> 
+     <span>Reviews</span>
+       <h1>Whats Our Customer Says</h1>
+         </div>
+           <div class="reviews-container">
+             <div class="box">
+               <div class="rev-img">
+                  <img src="images/tushar.jpg"alt="">
+                    </div>
+                       <h2>Tushar Basak</h2>
+                        <div class="stars">
+                      <i class='bx bxs-star'></i>
+                   <i class='bx bxs-star'></i>
+                 <i class='bx bxs-star'></i>
+             <i class='bx bxs-star'></i>
+         <i class='bx bxs-star-half'></i>
+       </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam harum quaerat quisquam, nesciunt similique voluptates aut est saepe repellendus eos velit enim temporibus, quis aperiam voluptatibus? Rem, ducimus quo.     
+  </p>
+</div>
+
+
+        <!----------Review image-2---------------->
+        <div class="box">
+          <div class="rev-img">
+            <img src="images/Akib.jpg"alt="">
+              </div>
+                <h2>Akib Mahmud</h2>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                  </div>
+                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero dolor ratione temporibus vel rem ullam laudantium corporis laboriosam repudiandae. Perspiciatis laborum inventore doloribus esse architecto vero ab quidem nam voluptate!
+            </P>
+        </div>
+
+
+        <!-------------Reviwe image-3---------------->
+        <div class="box">
+            <div class="rev-img">
+               <img src="images/Mohsin (1).jpg"alt="">
+                 </div>
+                   <h2>Mohsin Mullik</h2>
+                     <div class="stars">
+                       <i class='bx bxs-star'></i>
+                         <i class='bx bxs-star'></i>
+                       <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                </div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel animi optio nulla ad hic porro dignissimos explicabo doloremque vitae pariatur rem voluptatibus itaque voluptatem qui ullam nostrum provident, molestias omnis.</p>
+          </div>
+        </div>
+    </section>
+
+
+
+              <!------------------Map----------------->
+<section class="contact"id="contact">
+  <h1 class="heading">
+    <span>Contact<br>Us</span>
+      </h1>
+        <div class="row">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747017.388454255!2d87.70235500929488!3d23.489424702560207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1731545721135!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>></iframe>
+                <form action="">
+                  <h3>Get In Touch</h3>
+                    <input type="text"placeholder="name" class="box">
+                     <input type="email"placeholder="email"class="box">
+                      <input type="number"placeholder="number" class="box">
+                       <textarea placeholder="message"class="box"cols="30" rows="10"></textarea>
+                        <input type="submit"value="send message" class="btn">
+                          </form>
+                            </div>
+                               </section>
+
+
+
+           <!-----------------Footer------------------->
+<footer class="footer">
+  <div class="copyright">
+    <div class="social">
+      <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>           
+              <h2>Subscribes For Latest Update</h2>
+                <div class="box">
+                  <input type="text"placeholder="Enter Your Email...">
+                    <a href="#"class="btn">Subscribe</a>                   
+                     </div>
+
+
+
+
+            <!----------IOS IMAGE------------------>
+<img src="images/ios.png" alt="Download on iOS">
+   <img src="images/play.png" alt="Download on Play Store">
+         
+     </div>
+     </div>
+       <p>©Created By MM||All Rights Reserved</p>
+         </div>
+           </div>
+            </footer>
+              </div> 
+                </div>
+                 </div>
+                   </body>
+                     </html>
+

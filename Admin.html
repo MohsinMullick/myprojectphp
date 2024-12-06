@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="Project_CSS_File/Admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="form-container">
+      <title>Background Image Example</title>
+    <style>
+        body {
+            background: url('images/alc.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #d1f564;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+       
+    </style>
+        <h1>Register For Admin</h2>
+        <form action="All_Php_Files/Admin.php" method="POST">
+            <label for="User_Name">User Name:</label>
+            <input type="text" name="User_Name" id="User_Name" required>
+
+            <label for="Phone">Phone:</label>
+            <input type="text" name="Phone" id="Phone" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" required>
+
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

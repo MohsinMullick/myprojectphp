@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website - Sign Up</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="Project_CSS_File/Customer.css">   
+    <!-- Box Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form action="All_Php_Files/Customer.php" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+            
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone_number" placeholder="Enter your phone number" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <label for="registration-date">Registration Date</label>
+            <input type="date" id="registration-date" name="registration_date" required>
+            
+            <label for="house-number">House No</label>
+            <input type="text" id="house-number" name="house_number" placeholder="Enter your house number">
+            
+            <label for="road-number">Road No</label>
+            <input type="text" id="road-number" name="road_number" placeholder="Enter your road number">
+            
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+            
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code" name="postal_code" placeholder="Enter your postal code">
+            
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment_method" required>
+                <option value="">Select Payment</option>
+               <option value="Bkash">Bkash</option>
+                <option value="Rocket">Rocket</option>
+                <option value="Dutch">Dutch Bangla</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="user_type">User Type:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>By clicking Sign Up, you agree to our 
+            <a href="#">Terms and Conditions</a> and 
+            <a href="#">Privacy Policy</a>.
+        </p>
+        <p class="below">Already have an account? <a href="#">Login here</a></p>
+    </div>
+</body>
+</html>

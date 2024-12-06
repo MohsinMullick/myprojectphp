@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            width: 300px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .box-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .year {
+            color: #888;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .model {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .price .per-month {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 0 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Toyota Alphard.jpg" alt="Toyota Alphard">
+        </div>
+        <p class="year">2021</p>
+        <h3 class="model">Toyota Alphard</h3>
+        <h2 class="price">$3,000 | $150<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Toyota NOAH.jpg" alt="Toyota NOAH">
+        </div>
+        <p class="year">2020</p>
+        <h3 class="model">Toyota NOAH</h3>
+        <h2 class="price">$2,500 | $120<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Toyota Voxy.jpg" alt="Toyota Voxy">
+        </div>
+        <p class="year">2022</p>
+        <h3 class="model">Toyota Voxy</h3>
+        <h2 class="price">$4,000 | $200<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Hyundai H1.jpg" alt="Hyundai H1">
+        </div>
+        <p class="year">2019</p>
+        <h3 class="model">Hyundai H1</h3>
+        <h2 class="price">$2,800 | $130<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Honda Odyssey.jpg" alt="Honda Odyssey">
+        </div>
+        <p class="year">2021</p>
+        <h3 class="model">Honda Odyssey</h3>
+        <h2 class="price">$3,200 | $140<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Toyota HAICE.JPG" alt="Toyota HAICE">
+        </div>
+        <p class="year">2021</p>
+        <h3 class="model">Toyota HAICE</h3>
+        <h2 class="price">$3,200 | $140<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Toyota SIENNA.jpg" alt="Toyota SIENNA">
+        </div>
+        <p class="year">2021</p>
+        <h3 class="model">Toyota SIENNA</h3>
+        <h2 class="price">$3,200 | $140<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+
+
+    <div class="box">
+        <div class="box-img">
+            <img src="images/Mitsubishi Delica.jpg" alt="Mitsubishi Delica">
+        </div>
+        <p class="year">2021</p>
+        <h3 class="model">Mitsubishi Delica</h3>
+        <h2 class="price">$3,200 | $140<span class="per-month">/month</span></h2>
+        <a href="#" class="btn">Rent Now</a>
+    </div>
+</body>
+</html>

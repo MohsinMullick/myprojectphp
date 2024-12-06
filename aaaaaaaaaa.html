@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Car Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .dashboard {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .action-buttons button {
+            padding: 5px 10px;
+            margin: 2px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-update {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .btn-remove {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Manage Car Requests</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request ID</th>
+                    <th>Car ID</th>
+                    <th>Request Details</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example row -->
+                <tr>
+                    <td>1</td>
+                    <td>CAR123</td>
+                    <td>Car requires maintenance.</td>
+                    <td>Pending</td>
+                    <td class="action-buttons">
+                        <button class="btn-update">Mark Resolved</button>
+                        <button class="btn-remove">Remove Car</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
