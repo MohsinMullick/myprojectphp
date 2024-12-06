@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+
+/* Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 60px auto;
+    height: 100vh;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color:nevi blue;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 90%;
+    justify-content: left;
+    transition: background-color 0.3s;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #0056b3;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 20px;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+}
+
+.header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
